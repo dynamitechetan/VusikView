@@ -5,7 +5,7 @@
 #### Min SDK 11
 ## Screnshots
 
-![Screenshot](screenshot/screen1.gif)    ![Screenshot](screenshot/screen2.png)
+![Screenshot](screenshot/screen1.gif)                      ![Screenshot](screenshot/screen2.gif)
 
 
 ## How to use
@@ -99,3 +99,5 @@ The VusikView have some custom attributes, to use them , you must add this line 
 Copyright (c) 2016 Chetan Kaushik
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+* Screenshot 2 UI taken from :-  https://material.uplabs.com/posts/music-app-ui-exploration*
