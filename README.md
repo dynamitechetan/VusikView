@@ -100,4 +100,4 @@ Copyright (c) 2016 Chetan Kaushik
 
 Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-* Screenshot 2 UI taken from :-  https://material.uplabs.com/posts/music-app-ui-exploration*
+* Screenshot 2 UI taken from :-  https://material.uplabs.com/posts/music-app-ui-exploration
