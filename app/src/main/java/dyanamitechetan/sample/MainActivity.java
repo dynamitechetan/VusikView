@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         v = (VusikView) findViewById(R.id.vusik);
         int[]  myImageList = new int[]{R.drawable.note1,R.drawable.note2,R.drawable.note4};
         v.setImages(myImageList).start();
+        v.startNotesFall();
     }
 }
