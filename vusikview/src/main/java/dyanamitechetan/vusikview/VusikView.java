@@ -119,7 +119,7 @@ public class VusikView extends View {
         for (Notes notes : mNotes) {
             canvas.save();
             notes.mNotesIconDrawable.setBounds((int) notes.X, (int) notes.Y, (int) (notes.X + mNotesIconHeight * notes.scale), (int) (notes.Y + mNotesIconHeight * notes.scale));
-            notes.mNotesIconDrawable.setAlpha(notes.aplha);
+            notes.mNotesIconDrawable.setAlpha(notes.alpha);
             notes.mNotesIconDrawable.draw(canvas);
             canvas.restore();
         }
@@ -151,7 +151,7 @@ public class VusikView extends View {
 
     private class Notes {
         public float scale;
-        public int aplha; //alpha
+        public int alpha; 
         public float X;
         public float Y;
         private Drawable mNotesIconDrawable;
@@ -171,12 +171,12 @@ public class VusikView extends View {
 
                 for(int i=0;i<myImageList.length;i++){
 
-                            images[i] = resize(getResources().getDrawable(myImageList[i]));
+                            images[i] = resize(ContextCompat.getDrawable(getContext(), myImageList[i]));
                         }
 
             }
 
-            aplha = mRandom.nextInt(200) + 55; //get a random Aplha 55~255
+            alpha = mRandom.nextInt(200) + 55; //get a random Aplha 55~255
             scale = (mRandom.nextFloat() + 1) / 2;  //random Sizes 0.5~1.5
             X = mRandom.nextInt(mNotesViewWidth);
             Y = randInt(-mNotesIconHeight-2000,0);
@@ -207,7 +207,7 @@ public class VusikView extends View {
         }
         public void fadeAlpha(int alpha){
                 //for now not used, I was planning something else previously
-                aplha --;
+                alpha --;
         }
     }
 
