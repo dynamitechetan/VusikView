@@ -72,8 +72,11 @@ public class VusikView extends View {
                     }
 
                     if (mFallNotesState == FallNotesState.START) {
-                        mFallNotesThread.start();
+                        if(!mFallNotesThread.isAlive()) {
+                            mFallNotesThread.start();
+                        }
                         mFallNotesState = FallNotesState.RUNNING;
+
                     }
                 }
             }, 1000);
@@ -228,8 +231,9 @@ public class VusikView extends View {
                 }
 
                 if (mFallNotesState == FallNotesState.START) {
-                    mFallNotesThread.start();
-                    mFallNotesState = FallNotesState.RUNNING;
+
+                        mFallNotesState = FallNotesState.RUNNING;
+
                 }
             }
         }, 1000);
@@ -250,6 +254,8 @@ public class VusikView extends View {
     //Stop the animation
     public void stopNotesFall() {
         mFallNotesState = FallNotesState.STOP;
+        mFallNotesThread.interrupt();
+//        FallNotesThread.s
     }
 
     private class FallNotesThread extends Thread {
