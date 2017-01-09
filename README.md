@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-        compile 'dyanamitechetan.vusikview:vusikview:1.0'
+        compile 'dyanamitechetan.vusikview:vusikview:1.1'
 }
 ```
 
